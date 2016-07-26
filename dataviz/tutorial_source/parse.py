@@ -13,6 +13,8 @@ Distributed under the zlib png license. See LICENSE for details.
 
 import csv
 
+#test this out
+
 
 # Put the full path to your CSV/Excel file here
 MY_FILE = "../data/sample_sfpd_incident_all.csv"
