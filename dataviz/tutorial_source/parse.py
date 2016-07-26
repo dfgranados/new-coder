@@ -14,6 +14,7 @@ Distributed under the zlib png license. See LICENSE for details.
 import csv
 
 #test this out
+git remote add upstream https://github.com/dfgranados/new-coder.git
 
 
 # Put the full path to your CSV/Excel file here
