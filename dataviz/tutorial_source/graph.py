@@ -31,7 +31,7 @@ def parse(raw_file, delimiter):
     parsed_data = []
 
     # Skip over the first line of the file for the headers
-    fields = csv_data.next()
+    fields = next(csv_data)
 
     # Iterate over each row of the csv file, zip together field -> value
     for row in csv_data:
@@ -41,6 +41,7 @@ def parse(raw_file, delimiter):
     opened_file.close()
 
     return parsed_data
+    print(parsed_data)
 
 
 def visualize_days():
@@ -73,7 +74,7 @@ def visualize_days():
     # If you look at new-coder/dataviz/tutorial_source, you should see
     # the PNG file, "Days.png".  This is our graph!
     plt.savefig("Days.png")
-
+    plt.show()
     # Close figure
     plt.clf()
 
